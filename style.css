@@ -50,6 +50,54 @@
     color: #ffffff;
 }
 .navbar-logo {
-    height: 10px; /* Adjust the height as needed */
+    height: 60px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
 }
+.weak-falcon-28 {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #ff003c, #c648ff, #00ffff) 1;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background: #333;
+    background-clip: padding-box;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .weak-falcon-28:hover {
+    color: #333;
+    background: transparent;
+  }
+  
+  .weak-falcon-28::before,
+  .weak-falcon-28::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background: linear-gradient(45deg, #ff003c, #c648ff, #00ffff);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .weak-falcon-28::before {
+    transform: translate(-50%, -50%);
+  }
+  
+  .weak-falcon-28:hover::before {
+    width: 300%;
+    height: 300%;
+    transform: translate(-50%, -50%);
+  }
+  
