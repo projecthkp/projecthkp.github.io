@@ -1,64 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>สั่งซื้อ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <style>
-       body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.iframe-container {
-    position: relative;
-    width: 90%;
-    height: 90vh;
-    max-width: 1000px; /* เพิ่มความกว้างสูงสุด */
-    max-height: 750px; /* เพิ่มความสูงสูงสุด */
-    overflow: hidden;
-}
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
+        .navbar-toggler {
+            border-color: #FA4616; /* Set the border color here */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FA4616' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 150%; /* Adjust this value to increase the height */
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .content-container {
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
-        <div class="content-container">
-        <h1>ข้อมูลส่วนตัว</h1>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html">Sriwichai</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">หน้าหลัก <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Shop.html">สั่งเสื้อสี</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="payment.html">ข้อมูลประจำตัว</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ติดต่อ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <h1 class="text-center">SHOP</h1>
         <div class="iframe-container">
-            <iframe src="https://script.google.com/macros/s/AKfycbwI-jYgOdMJ5vVt600LWkN6zPRdVR2kpSKPpKh7coQU5GMiUZ6DXFgSvNPhJfGi4_1xUQ/exec"></iframe>
+            <iframe src="https://script.google.com/macros/s/AKfycbwI-jYgOdMJ5vVt600LWkN6zPRdVR2kpSKPpKh7coQU5GMiUZ6DXFgSvNPhJfGi4_1xUQ/exec" frameborder="0" style="border: none; overflow: hidden;" allowfullscreen></iframe>
         </div>
     </div>
-    
-    
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Rathee Chalermnitiwong & Kamonphob Srisamrit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
