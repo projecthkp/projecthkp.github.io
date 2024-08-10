@@ -1,16 +1,51 @@
-*{
+/* Global Font Style */
+* {
     font-family: "Chakra Petch", sans-serif;
 }
+
+/* Navbar Customization */
 .navbar-custom {
-    background-color:  #7B8189; /* เปลี่ยนสีพื้นหลัง */
+    background-color: #7B8189; /* Background color */
 }
+
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: #ffffff; /* เปลี่ยนสีข้อความ */
+    color: #ffffff; /* Text color */
 }
+
 .navbar-toggler {
-    border-color: #FA4616; /* Set the border color here */
+    border-color: #FA4616; /* Toggler button border color */
 }
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FA4616' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Content Container */
+.content-container {
+    margin: 20px;
+}
+
+/* Iframe Container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%; /* Adjust this value to increase the height */
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
 }
