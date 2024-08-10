@@ -1,79 +1,16 @@
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    font-family: "Chakra Petch", sans-serif;
 }
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+.navbar-custom {
+    background-color:  #7B8189; /* เปลี่ยนสีพื้นหลัง */
 }
-
-header {
-    background-color: #004b8d;
-    padding: 10px 0;
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff; /* เปลี่ยนสีข้อความ */
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar-toggler {
+    border-color: #FA4616; /* Set the border color here */
 }
-
-.logo img {
-    height: 50px;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-}
-
-.menu li {
-    margin-left: 20px;
-}
-
-.menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.hero-content {
-    text-align: center;
-}
-
-.info {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.info-box {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex-basis: 30%;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FA4616' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
