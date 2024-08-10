@@ -9,6 +9,45 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <style>
+       body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.iframe-container {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    max-width: 1000px; /* เพิ่มความกว้างสูงสุด */
+    max-height: 750px; /* เพิ่มความสูงสูงสุด */
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
